@@ -37,9 +37,7 @@ name=int(input("შემოიტანე შენი ქულა :  "))
 if name:=<50
     print( ჩააბარე )
   else:
-    print(ვწუხვარ ჩაიჭერი)
-
-
+    print(vwuxvar sen ar xar 18 wlis)
 
 
 
