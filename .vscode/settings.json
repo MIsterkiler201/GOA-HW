@@ -1,5 +1,6 @@
 {
     "liveServer.settings.CustomBrowser": "chrome",
     "java.selectionRange.enabled": false,
-    "java.foldingRange.enabled": true
+    "java.foldingRange.enabled": true,
+    "liveServer.settings.multiRootWorkspaceName": "GoA-HW"
 }
