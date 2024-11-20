@@ -1,0 +1,96 @@
+<!-- 1. კომენტარების მეშვეობით ახსენით რა არის inline და internal css._* -->
+
+<!-- 2. შექმენით საიტი, სადაც გექნებათ გამოყენებული internal და inline css, ასევე დაამატეთ ფოტოებიც და გამოიყენეთ style inheritance. -->
+
+
+
+<!-- 1 -->
+<p style="color: blue; font-size: 16px;">ეს არის inline CSS.</p>
+
+
+
+
+
+
+
+<head>
+    <style>
+      p {
+        color: green;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>ეს არის internal CSS.</p>
+  </body>
+  
+
+
+
+<!-- 2 -->
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>საიტი Inline და Internal CSS-ის გამოყენებით</title>
+  
+  <!-- Internal CSS -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      color: darkblue;
+    }
+
+    p {
+      color: #555;
+      font-size: 18px;
+    }
+
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .image-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .image-container img {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>ჩემი პირველი საიტი</h1>
+    <p>ეს არის მაგალითი inline და internal CSS-ის გამოყენებით. სტილის მემკვიდრეობა მუშაობს ისე, რომ ყველა ელემენტი მემკვიდრეობით იღებს ძირითად სტილებს, როგორიცაა ფონტი და ფონი.</p>
+    
+    <!-- Inline CSS -->
+    <p style="color: red; font-size: 20px;">ეს არის inline CSS-ის მაგალითი, რომელიც ცალკე, კონკრეტულ ელემენტზე ვრცელდება.</p>
+
+    <div class="image-container">
+      <img src="https://via.placeholder.com/500" alt="Sample Image">
+    </div>
+  </div>
+
+</body>
+</html>
+
