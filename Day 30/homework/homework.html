@@ -1,0 +1,122 @@
+<!-- Website (Portfolio):
+
+* შექმენით ვებგვერდი რომელიც შეიცავს parent/child ელემენტებს, ლინკებს, საიტზე გამოიყენეთ პიქსელების მაგივრად პროცენტები, ეცადეთ მაქსიმალურად გაალამაზოთ და დახვეწოთ.
+
+* დაამატეთ ამ საიტზე "თქვენს შესახებ" სექცია, სადაც წარმოადგენთ თქვენს მიერ შესრულებულ პროექტებს და მოკლე ინფორმაციას.
+
+* საბოლოოდ, საიტის ბოლოს დაამატეთ საკონტაქტო ინფორმაცია. -->
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>პორტფოლიო</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1% 0;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 1% 2%;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 2% 0;
+        }
+        .about, .projects, .contact {
+            margin-bottom: 4%;
+        }
+        .about h2, .projects h2, .contact h2 {
+            text-align: center;
+            color: #4CAF50;
+        }
+        .project-item {
+            background-color: white;
+            margin: 2% 0;
+            padding: 2%;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1% 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>კეთილი იყოს თქვენი მობრძანება ჩემს პორტფოლიოზე</h1>
+    </header>
+
+    <nav>
+        <a href="#about">ჩემს შესახებ</a>
+        <a href="#projects">პროექტები</a>
+        <a href="#contact">კონტაქტი</a>
+    </nav>
+
+    <div class="container">
+        <section id="about" class="about">
+            <h2>ჩემს შესახებ</h2>
+            <p>გამარჯობა! მე ვარ ვებ დეველოპერი, რომელიც გატაცებულია ლამაზი და ფუნქციური ვებგვერდების შექმნით. ჩემი მიზანია მომხმარებლისთვის მარტივი და მეგობრული დიზაინის შემოთავაზება.</p>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2>ჩემი პროექტები</h2>
+            <div class="project-item">
+                <h3>პროექტი 1: ელექტრონული კომერციის ვებსაიტი</h3>
+                <p>მომხმარებლისთვის მარტივი და ადაპტირებული ელექტრონული კომერციის პლატფორმა, რომელიც შექმნილია HTML, CSS და JavaScript-ით.</p>
+            </div>
+            <div class="project-item">
+                <h3>პროექტი 2: პორტფოლიოს ვებსაიტი</h3>
+                <p>ელეგანტური პორტფოლიოს ვებსაიტი, რომელიც აჩვენებს ჩემს პროექტებსა და უნარებს.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>დამიკავშირდით</h2>
+            <p>თუ გსურთ თანამშრომლობა ან გაქვთ რაიმე შეკითხვა, გთხოვთ დამიკავშირდეთ!</p>
+            <ul>
+                <li>ელფოსტა: myemail@example.com</li>
+                <li>ტელეფონი: +123 456 789</li>
+                <li>LinkedIn: <a href="https://linkedin.com/in/username" target="_blank">linkedin.com/in/username</a></li>
+            </ul>
+        </section>
+    </div>
+    <img src="ჩინელი.avif" alt="">
+    <footer>
+        <p>&copy; 2024 ჩემი პორტფოლიო. ყველა უფლება დაცულია.</p>
+    </footer>
+</body>
+</html>
+

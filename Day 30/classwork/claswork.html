@@ -1,0 +1,167 @@
+<!-- შექმენით საიტი: 
+* სადაც გექნება ფოტო, რომელიც იქნება საიტის ზომის 50%.
+* შექმენით div, ზომებით 200x200, მიეცით ფერი, 
+შემდეგ შიგნით შექმენით მეორე შვილი div, მწვანე ფერის, რომლის ზომაც იქნება მშობლის ნახევარი.
+
+* შექმენით div, სადაც ჩასვავთ 3 შვილ ელემენტს, ზომები უნდა პატარავდებოდეს და ფერებიც უნდა იყოს სხვადასხვა, პროცენტული მნიშვნელობები გამოიყენეთ. -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS Div Example</title>
+    <style>
+        
+        .half-page-image {
+            width: 50%;
+            height: 50vh;
+            background-image: url('your-image.jpg'); 
+            background-size: cover;
+            background-position: center;
+        }
+
+        
+        .parent-div {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .child-div {
+            width: 50%;
+            height: 50%;
+            background-color: green;
+        
+
+        .nested-container {
+            width: 300px;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .nested-container div {
+            width: 100%;
+            height: 30%;
+        }
+
+        .nested-container .child-1 {
+            background-color: blue;
+        }
+
+        .nested-container .child-2 {
+            background-color: orange;
+            width: 80%;
+        }
+
+        .nested-container .child-3 {
+            background-color: purple;
+            width: 60%;
+        }
+    </style>
+</head>
+<vv<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML & CSS Div Example</title>
+        <style>
+            /* Style for the full-size image */
+            .half-page-image {
+                width: 50%;
+                height: 50vh;
+                background-image: url('your-image.jpg'); /* Replace with your image URL */
+                background-size: cover;
+                background-position: center;
+            }
+    
+            /* First div and its child */
+            .parent-div {
+                width: 200px;
+                height: 200px;
+                background-color: red;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 20px 0;
+            }
+    
+            .child-div {
+                width: 50%;
+                height: 50%;
+                background-color: green;
+            }
+    
+            /* Div with nested shrinking children */
+            .nested-container {
+                width: 300px;
+                height: 300px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+            }
+    
+            .nested-container div {
+                width: 100%;
+                height: 30%;
+            }
+    
+            .nested-container .child-1 {
+                background-color: blue;
+            }
+    
+            .nested-container .child-2 {
+                background-color: orange;
+                width: 80%;
+            }
+    
+            .nested-container .child-3 {
+                background-color: purple;
+                width: 60%;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div class="kokakola"></div>
+    
+        
+        <div class="parent-div">
+            <div class="child-div"></div>
+        </div>
+    <img src="kokakola111111.jpg" alt="200 px"><small>50</small>
+        
+        <div class="nested-container">
+            <div class="child-1"></div>
+            <div class="child-2"></div>
+            <div class="child-3"></div>
+        </div>
+    </body>
+    </html>
+
+    <div class="half-page-image"></div>
+
+    
+    <div class="parent-div"
+        <div class="child-div"></div>
+    </div>
+
+
+    <div class="nested-container">
+        <div class="child-1"></div>
+        <div class="child-2"></div>
+        <div class="child-3"></div>
+    </div>
+</body>
+</html>
