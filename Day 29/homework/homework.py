@@ -31,7 +31,7 @@ def comparison(x, y):
     print(x < y, x > y, x <= y, x >= y)
 
 # დაბადების წლის გამოთვლა (შესით:)
-def age
+def age                                                                                                                                                                                                 
 
 
 
