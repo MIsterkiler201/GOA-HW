@@ -1,0 +1,99 @@
+<!-- Website (Portfolio):
+
+* შექმენით ვებგვერდ რომელიც შეიცავს მინიმუმ ხუთ ლინკს. გამოიყენეთ hover იმისთვის რომ გასტილოთ ეს ლინკები (მაუსის ლინკზე მიტანისას იზრდიდეს ზომას და ა.შ).
+
+* დაამატეთ ამ საიტზე "თქვენს შესახებ" სექცია, სადაც წარმოადგენთ თქვენს მიერ შესრულებულ პროექტებს და მოკლე ინფორმაციას.
+
+* საბოლოოდ, საიტის ბოლოს დაამატეთ საკონტაქტო ინფორმაცია. -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Website</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+
+        /* 50% size image */
+        .half-image {
+            width: 50%;
+            height: 50%;
+            background: url('https://via.placeholder.com/800') no-repeat center center;
+            background-size: cover;
+            border: 2px solid #333;
+        }
+
+        /* Parent and child divs */
+        .parent-div {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        .child-div {
+            width: 50%;
+            height: 50%;
+            background-color: green;
+        }
+
+        /* Nested elements with decreasing sizes */
+        .nested-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .nested-div {
+            background-color: #f00;
+            width: 60%;
+            height: 60px;
+        }
+
+        .nested-div:nth-child(2) {
+            background-color: #0f0;
+            width: 40%;
+            height: 40px;
+        }
+
+        .nested-div:nth-child(3) {
+            background-color: #00f;
+            width: 20%;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 50% size image -->
+    <div class="half-image"></div>
+
+    <!-- Parent and child divs -->
+    <div class="parent-div">
+        <div class="child-div"></div>
+    </div>
+
+    <!-- Nested elements -->
+    <div class="nested-container">
+        <div class="nested-div"></div>
+        <div class="nested-div"></div>
+        <div class="nested-div"></div>
+    </div>
+</body>
+</html>

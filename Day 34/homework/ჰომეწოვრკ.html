@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Richest People</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .bio-section {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        .bio-section img {
+            float: left;
+            margin-right: 15px;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .bio-section button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .bio-section button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Richest People in the World</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Net Worth (in billions)</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Elon Musk</td>
+                <td>$230</td>
+                <td>52</td>
+            </tr>
+            <tr>
+                <td>Jeff Bezos</td>
+                <td>$140</td>
+                <td>59</td>
+            </tr>
+            <tr>
+                <td>Bernard Arnault</td>
+                <td>$190</td>
+                <td>74</td>
+            </tr>
+            <tr>
+                <td>Bill Gates</td>
+                <td>$120</td>
+                <td>68</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="bio-section">
+        <img src="https://via.placeholder.com/150" alt="Elon Musk">
+        <h2>Elon Musk</h2>
+        <p>Elon Musk is the CEO of Tesla and SpaceX, known for his ambitious projects and groundbreaking innovations in electric vehicles, space exploration, and renewable energy. With a net worth of $230 billion, he remains one of the most influential figures in technology and entrepreneurship.</p>
+        <button onclick="alert('More info about Elon Musk coming soon!')">Learn More</button>
+    </div>
+</body>
+</html>

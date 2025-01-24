@@ -1,0 +1,93 @@
+<!--შექმენით საიტი, სადაც table-ს მეშვეობით შექმნით სკოლის მოსწავლეების წლის საბოლოო ქულის ცხრილს. ცხრილში უნდა იყოს student name, student lastname, student age and student's grade. გასტილეთ ის თქვენი გემოვნებით, თუმცა აუცილებლად გაუკეთეთ საზღვარი, ასევე ეცადეთ გამოიყენოთ გაკვეთილზე განვლილი მასალის უმრავლესობა.
+
+Bonus: ასევე ცხრილის ქვემოთ დაამატეთ ფოტოები, რათა საიტი გახდეს უფრო მიმზიდველი.  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grades</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .gallery {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+        .gallery img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Student Grades</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Student Name</th>
+                <th>Student Lastname</th>
+                <th>Student Age</th>
+                <th>Student's Grade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Anna</td>
+                <td>Smith</td>
+                <td>14</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>15</td>
+                <td>B+</td>
+            </tr>
+            <tr>
+                <td>Emily</td>
+                <td>Johnson</td>
+                <td>13</td>
+                <td>A-</td>
+            </tr>
+            <tr>
+                <td>Michael</td>
+                <td>Brown</td>
+                <td>16</td>
+                <td>B</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="gallery">
+        <img src="https://via.placeholder.com/150" alt="Student 1">
+        <img src="https://via.placeholder.com/150" alt="Student 2">
+        <img src="https://via.placeholder.com/150" alt="Student 3">
+        <img src="https://via.placeholder.com/150" alt="Student 4">
+    </div>
+</body>
+</html>
