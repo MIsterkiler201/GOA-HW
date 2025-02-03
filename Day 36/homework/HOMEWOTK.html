@@ -1,0 +1,93 @@
+<!--```1. შექმენით form, label-ებით და input-ებით, შემდეგ კი გასტილეთ მაქსიმალურად.
+2. შექმენით სია, <ol> და <ul> ელემენტებით, შემდეგ კი გამოიყენეთ ყველა განვლილი მასალა, რომ დახვეწოთ დიზაინი.
+
+შექმენით საიტი, სადაც გექნებათ:
+
+* ყველა განვლილი მასალიდან ელემენტი
+* თიოთოეულ თეგს მიეცით სტილის ატრიბუტი და გაალამაზეთ მაქსიმალურად
+* საიტს შეუცვალეთ ფონი.
+* გასტილეთ მაქსიმალურად.```  -->
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>სტილიზებული საიტი</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, button {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        ul, ol {
+            text-align: left;
+            margin: 20px auto;
+            max-width: 300px;
+            background: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+        }
+        li {
+            padding: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>მომხმარებლის ფორმა</h2>
+        <form>
+            <label for="name">სახელი:</label>
+            <input type="text" id="name" placeholder="შეიყვანეთ სახელი">
+            
+            <label for="email">ელ. ფოსტა:</label>
+            <input type="email" id="email" placeholder="შეიყვანეთ ელ. ფოსტა">
+            
+            <button type="submit">გაგზავნა</button>
+        </form>
+        
+        <h3>ჩამონათვალი:</h3>
+        <ul>
+            <li>პუნქტი 1</li>
+            <li>პუნქტი 2</li>
+            <li>პუნქტი 3</li>
+        </ul>
+        <ol>
+            <li>პირველი</li>
+            <li>მეორე</li>
+            <li>მესამე</li>
+        </ol>
+    </div>
+</body>
+</html>
