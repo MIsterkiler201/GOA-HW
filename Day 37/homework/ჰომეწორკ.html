@@ -1,0 +1,49 @@
+<!-- შექმენით საიტი, სადაც:
+
+1. გექნებათ ერთი ცალი კვადრატული ფორმის წითელი კუბიკი (div), სიმაღლე - 100px, სიგანე - 100px, 
+რომელსაც border radius-ის მეშვეობით მოუმრგვალებთ სათითაო კუთხეს განსხვავებულად.
+
+2. გექნებათ ფოტო, რომელსაც გაუკეთებთ padding-ს და border-ს, შემდეგ კი margin-ის მეშვეობით გადაიტანთ საიტის ცენტრში.
+
+3. html-ის ფაილში კომენტარების მეშვეობით ახსენით, თუ რა არის padding, border და margin. -->
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>სტილებიანი ელემენტები</title>
+    <style>
+        
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border-radius: 10px 20px 30px 40px; 
+        }
+
+
+        .image-container {
+            text-align: center; 
+            margin-top: 50px;
+        }
+
+        .image-container img {
+            padding: 20px;
+            border: 5px solid black; 
+            margin: auto; 
+            display: block; 
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box"></div>
+
+   
+    <div class="image-container">
+        
+        <img src="https://via.placeholder.com/150" alt="სურათი">
+    </div>
+</body>
+</html>

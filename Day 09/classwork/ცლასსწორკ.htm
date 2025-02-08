@@ -1,0 +1,46 @@
+<!-- გააკეთეთ single page website, 3 ლინკით, რომელიც გადაგიყვანთ ფოტოებზე, იმავე საიტზე -->
+
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Page Website</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        .section { display: none; }
+        .active { display: block; }
+        nav a { margin: 10px; text-decoration: none; color: blue; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>მარტივი Single Page Website</h1>
+    <nav>
+        <a onclick="showSection('photo1')">ფოტო 1</a>
+        <a onclick="showSection('photo2')">ფოტო 2</a>
+        <a onclick="showSection('photo3')">ფოტო 3</a>
+    </nav>
+    
+    <div id="photo1" class="section active">
+        <h2>ფოტო 1</h2>
+        <img src="https://via.placeholder.com/400" alt="Photo 1">
+    </div>
+    <div id="photo2" class="section">
+        <h2>ფოტო 2</h2>
+        <img src="https://via.placeholder.com/400" alt="Photo 2">
+    </div>
+    <div id="photo3" class="section">
+        <h2>ფოტო 3</h2>
+        <img src="https://via.placeholder.com/400" alt="Photo 3">
+    </div>
+    
+    <script>
+        function showSection(id) {
+            document.querySelectorAll('.section').forEach(section => section.classList.remove('active'));
+            document.getElementById(id).classList.add('active');
+        }
+    </script>
+</body>
+</html>
+
