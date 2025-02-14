@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Examples</title>
+    <style>
+        .container {
+            display: flex;
+            border: 2px solid black;
+            margin: 10px;
+            padding: 10px;
+        }
+        /* 1. 4 Cube */
+        .cube-container {
+            flex-direction: row-reverse;
+        }
+        .cube {
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+        }
+        .red { background-color: red; }
+        .blue { background-color: blue; }
+        .green { background-color: green; }
+        .yellow { background-color: yellow; }
+        
+        /* 2. 5 div vertically */
+        .vertical-container {
+            flex-direction: column;
+        }
+        .box {
+            width: 50px;
+            height: 50px;
+            background-color: lightblue;
+            margin: 5px;
+        }
+        
+        /* 3. Paragraph & Wrap */
+        .wrap-container {
+            flex-wrap: wrap;
+        }
+        .paragraph {
+            width: 150px;
+            background-color: lightgray;
+            margin: 5px;
+            padding: 10px;
+        }
+        
+        /* 4. 5 Paragraph & Shrink */
+        .shrink-container .paragraph {
+            flex-shrink: 1;
+        }
+        
+        /* 5v<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Examples</title>
+    <style>
+        .container {
+            display: flex;
+            border: 2px solid black;
+            margin: 10px;
+            padding: 10px;
+        }
+        /* 1. 4 Cube */
+        .cube-container {
+            flex-direction: row-reverse;
+        }
+        .cube {
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+        }
+        .red { background-color: red; }
+        .blue { background-color: blue; }
+        .green { background-color: green; }
+        .yellow { background-color: yellow; }
+        
+        /* 2. 5 div vertically */
+        .vertical-container {
+            flex-direction: column;
+        }
+        .box {
+            width: 50px;
+            height: 50px;
+            background-color: lightblue;
+            margin: 5px;
+        }
+        
+        /* 3. Paragraph & Wrap */
+        .wrap-container {
+            flex-wrap: wrap;
+        }
+        .paragraph {
+            width: 150px;
+            background-color: lightgray;
+            margin: 5px;
+            padding: 10px;
+        }
+        
+        /* 4. 5 Paragraph & Shrink */
+        .shrink-container .paragraph {
+            flex-shrink: 1;
+        }
+        
+        /* 5. 5 Paragraph & Flex-grow */
+        .grow-container .paragraph {
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container cube-container">
+        <div class="cube red"></div>
+        <div class="cube blue"></div>
+        <div class="cube green"></div>
+        <div class="cube yellow"></div>
+    </div>
+
+    <div class="container vertical-container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+    <div class="container wrap-container">
+        <p class="paragraph">Paragraph 1</p>
+        <p class="paragraph">Paragraph 2</p>
+        <p class="paragraph">Paragraph 3</p>
+        <p class="paragraph">Paragraph 4</p>
+        <p class="paragraph">Paragraph 5</p>
+    </div>
+
+    <div class="container shrink-container">
+        <p class="paragraph">Shrink 1</p>
+        <p class="paragraph">Shrink 2</p>
+        <p class="paragraph">Shrink 3</p>
+        <p class="paragraph">Shrink 4</p>
+        <p class="paragraph">Shrink 5</p>
+    </div>
+
+    <div class="container grow-container">
+        <p class="paragraph">Grow 1</p>
+        <p class="paragraph">Grow 2</p>
+        <p class="paragraph">Grow 3</p>
+        <p class="paragraph">Grow 4</p>
+        <p class="paragraph">Grow 5</p>
+    </div>
+</body>
+</html>
+
+        .grow-container .paragraph {
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container cube-container">
+        <div class="cube red"></div>
+        <div class="cube blue"></div>
+        <div class="cube green"></div>
+        <div class="cube yellow"></div>
+    </div>
+
+    <div class="container vertical-container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+    <div class="container wrap-container">
+        <p class="paragraph">Paragraph 1</p>
+        <p class="paragraph">Paragraph 2</p>
+        <p class="paragraph">Paragraph 3</p>
+        <p class="paragraph">Paragraph 4</p>
+        <p class="paragraph">Paragraph 5</p>
+    </div>
+
+    <div class="container shrink-container">
+        <p class="paragraph">Shrink 1</p>
+        <p class="paragraph">Shrink 2</p>
+        <p class="paragraph">Shrink 3</p>
+        <p class="paragraph">Shrink 4</p>
+        <p class="paragraph">Shrink 5</p>
+    </div>
+
+    <div class="container grow-container">
+        <p class="paragraph">Grow 1</p>
+        <p class="paragraph">Grow 2</p>
+        <p class="paragraph">Grow 3</p>
+        <p class="paragraph">Grow 4</p>
+        <p class="paragraph">Grow 5</p>
+    </div>
+</body>
+</html>
