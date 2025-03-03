@@ -1,0 +1,118 @@
+
+
+
+
+
+
+ვ<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>მუზეუმი</title>
+    <style>
+        /* ზოგადი სტილები */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 20px;
+        }
+
+        /* კონტეინერი */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 80%;
+            max-width: 1200px;
+        }
+
+        /* სურათები */
+        .images {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        .image {
+            width: 30%;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .image:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .image:hover img {
+            transform: scale(1.1);
+        }
+
+        /* აღწერა */
+        .description {
+            text-align: center;
+            width: 80%;
+        }
+
+        .description h1 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .description p {
+            font-size: 1.1rem;
+            color: #666;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="images">
+            <div class="image">
+                <img src="ოლოკა.jpg" alt="მუზეუმის სურათი 1">
+            </div>
+            <div class="image">
+                <img src="ო.jpeg" alt="მუზეუმის სურათი 2">
+            </div>
+            <div class="image">
+                <img src="ლ.jpg"მუზეუმის სურათი 3">
+            </div>
+        </div>
+
+        <div class="description">
+            <h1>საინტერესო მოგზაურობა/h1>
+          <br>
+                <p>მუზეუმი წარმოადგენს ერთ-ერთ ყველაზე საინტერესო კულტურულ ცენტრს, სადაც წარმოდგენილია როგორც ისტორიული, ასევე თანამედროვე ხელოვნება. მისი ექსპონატები მოიცავს საუკუნეების ისტორიის კულტურულ ღირებულებებს და ნამუშევრებს, რომლებიც ასახავს მუზეუმის მრავალფეროვან ისტორიას.</p>
+        </div>
+    </div>
+
+</body>
+</html>

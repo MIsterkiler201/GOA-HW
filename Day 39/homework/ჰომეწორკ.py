@@ -26,9 +26,9 @@ strings.append("fig")
 print(strings)
 #6
 strings = ["apple", "banana", "cherry", "date", "elderberry"]
-strings.insert(2, "kiwi")  # დაამატებს "kiwi" ინდექსზე 2
+strings.insert(2, "kiwi") 
 print(strings)
 #7
 strings = ["apple", "banana", "cherry", "date", "elderberry"]
-strings.pop(1)  # ამოიყვანს "banana" ინდექსიდან 1
+strings.pop(1) 
 print(strings)
